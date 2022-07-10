@@ -1,0 +1,2 @@
+class Warnung < ApplicationRecord
+end
