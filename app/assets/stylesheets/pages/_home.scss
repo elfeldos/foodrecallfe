@@ -1,24 +1,24 @@
 // Specific CSS for your home-page
 .container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". explanation explanation ."
-    ". explanation explanation ."
-    ". . . ."
-    ". newest-updates newest-updates ."
-    ". . . ."
-    ". searchbar searchbar ."
-    ". . . .";
+    ". explanation explanation explanation explanation ."
+    ". explanation explanation explanation explanation ."
+    ". . . . . ."
+    ". newest-updates newest-updates newest-updates newest-updates ."
+    ". newest-updates newest-updates newest-updates newest-updates ."
+    ". searchbar searchbar searchbar searchbar ."
+    ". . . . . .";
 }
-
-.searchbar { grid-area: searchbar; }
-
-.newest-updates { grid-area: newest-updates; }
 
 .explanation {
   grid-area: explanation;
   background-color: white;
 }
+
+.newest-updates { grid-area: newest-updates; }
+
+.searchbar { grid-area: searchbar; }
