@@ -5,20 +5,31 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". explanation explanation explanation explanation ."
-    ". explanation explanation explanation explanation ."
-    ". . . . . ."
-    ". newest-updates newest-updates newest-updates newest-updates ."
+    "explanation explanation explanation explanation explanation explanation"
+    "explanation explanation explanation explanation explanation explanation"
     ". newest-updates newest-updates newest-updates newest-updates ."
     ". searchbar searchbar searchbar searchbar ."
+    ". . . . . ."
+    ". . . . . ."
     ". . . . . .";
+}
+
+body {
+  background-color: white;
 }
 
 .explanation {
   grid-area: explanation;
-  background-color: white;
+  padding: 1rem 1.5rem 0 1.5rem;
+  text-align: center;
 }
 
-.newest-updates { grid-area: newest-updates; }
+.newest-updates {
+  grid-area: newest-updates;
+  padding: 1rem 1.5rem 0 1.5rem;
+}
 
-.searchbar { grid-area: searchbar; }
+.searchbar {
+  grid-area: searchbar;
+  padding: 1rem 1.5rem 0 1.5rem;
+}
