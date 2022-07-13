@@ -7,8 +7,8 @@
   grid-template-areas:
     "explanation explanation explanation explanation explanation explanation"
     "explanation explanation explanation explanation explanation explanation"
-    ". newest-updates newest-updates newest-updates newest-updates ."
-    ". searchbar searchbar searchbar searchbar ."
+    "newest-updates newest-updates newest-updates newest-updates newest-updates newest-updates"
+    "searchbar searchbar searchbar searchbar searchbar searchbar"
     ". . . . . ."
     ". . . . . ."
     ". . . . . .";
@@ -20,16 +20,18 @@ body {
 
 .explanation {
   grid-area: explanation;
-  padding: 1rem 1.5rem 0 1.5rem;
+  padding: 1.8rem 1.5rem 0 1.5rem;
   text-align: center;
 }
 
 .newest-updates {
   grid-area: newest-updates;
   padding: 1rem 1.5rem 0 1.5rem;
+  text-align: center;
 }
 
 .searchbar {
   grid-area: searchbar;
   padding: 1rem 1.5rem 0 1.5rem;
+  text-align: center;
 }
